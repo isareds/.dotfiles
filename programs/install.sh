@@ -16,10 +16,10 @@ sudo snap install blender --classic
 sudo snap install code --classic
 
 ## SKYPE
-sudo snap install skype
+sudo snap install skype --classic
 
 ## SLACK
-sudo snap install slack
+sudo snap install slack --classic
 
 ## TELEGRAM
 sudo snap install telegram-desktop

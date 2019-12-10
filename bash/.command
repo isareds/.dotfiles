@@ -14,6 +14,9 @@ export ANDROID_HOME=$ANDROID_SDK_ROOT
 # FLUTTER SDK
 export PATH=$PATH:$HOME/flutter/bin
 
+# Snap bin
+export PATH=$PATH:/snap/bin
+
 # FZF for vim plugin
 export FZF_DEFAULT_COMMAND='rg --files --follow --hidden'
 
