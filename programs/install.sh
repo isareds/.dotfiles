@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ## start configuration
-sudo apt-get update
-sudo apt-get install apt-transport-https ca-certificates curl software-properties-common snapd
+sudo apt update
+sudo apt --fix-broken install  apt-transport-https ca-certificates curl software-properties-common snapd
 
 ## CHROME
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -38,3 +38,6 @@ sudo snap install postman
 
 ## vim
 sudo apt install neovim
+
+## remove unecessary package
+sudo apt autoremove
