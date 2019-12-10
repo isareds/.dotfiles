@@ -2,16 +2,13 @@
 
 ## start configuration
 sudo apt-get update
-sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common snapd xdg-open-snapd
 
 ## CHROME
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
-## SNAP
-sudo apt-get install snapd xdg-open-snapd
-
-## BLENDER 
+## BLENDER
 sudo snap install blender --classic
 
 ## VS CODE
@@ -41,3 +38,6 @@ sudo snap install sublime-text --classic
 
 ## postman
 sudo snap install postman
+
+## vim
+sudo apt insall neovim
