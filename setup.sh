@@ -9,6 +9,7 @@ select yn in "Yes" "No"; do
 		ln -sfv ~/.dotfiles/git/.gitconfig ~
 		ln -svf ~/.dotfiles/vim/.vimrc ~
 		ln -svf ~/.dotfiles/bash/.bash_profile ~
+		./~/.dotfiles/programs/install.sh
 		source ~/.bashrc
 		break
 		;;
