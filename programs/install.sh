@@ -5,8 +5,8 @@ sudo apt update
 sudo apt --fix-broken install  apt-transport-https ca-certificates curl software-properties-common snapd
 
 ## CHROME
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P ~/Downloads
+sudo dpkg -i ~/Downloads/google-chrome-stable_current_amd64.deb
 sudo apt-get install -f
 
 ## BLENDER
