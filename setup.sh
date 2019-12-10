@@ -11,6 +11,7 @@ select yn in "Yes" "No"; do
 		ln -svf ~/.dotfiles/vim/.vimrc ~
 		ln -svf ~/.dotfiles/bash/.bash_profile ~
 		~/.dotfiles/vim/setup.sh
+		~/.dotfiles/programs/install.sh
 		source ~/.bashrc
 		break
 		;;
