@@ -39,5 +39,8 @@ sudo snap install postman
 ## vim
 sudo apt install neovim
 
+## client mail
+sudo snap install mailspring
+
 ## remove unecessary package
 sudo apt autoremove
