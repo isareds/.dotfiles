@@ -36,11 +36,15 @@ sudo snap install sublime-text --classic
 ## postman
 sudo snap install postman
 
-## vim
-sudo apt install neovim
-
 ## client mail
 sudo snap install mailspring
+
+## vim
+sudo apt install neovim
+sudo apt remove vim
+
+## zsh
+sudo apt install zsh
 
 ## remove unecessary package
 sudo apt autoremove
