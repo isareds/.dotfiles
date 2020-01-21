@@ -11,3 +11,7 @@ alias dcl='dc logs -f'
 alias dcr='dc restart'
 alias dcsa='docker stop $(docker ps -a -q)'
 alias dce='dc exec'
+
+
+# autojump
+alias j='autojump'

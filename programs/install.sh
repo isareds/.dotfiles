@@ -39,6 +39,9 @@ sudo snap install postman
 ## client mail
 sudo snap install mailspring
 
+## heroku site manager
+sudo snap install heroku --classic
+
 ## vim
 sudo apt install neovim
 sudo apt remove vim

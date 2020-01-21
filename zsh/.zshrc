@@ -17,3 +17,5 @@ alias l='ls -CF'
 
 ## load the same alias of bash due to the same syntax
 source $HOME/.bash_aliases
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

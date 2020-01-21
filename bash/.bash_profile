@@ -20,8 +20,8 @@ if [ -f ~/.dotfiles/bash/.command ] && ! shopt -oq posix; then
     . ~/.dotfiles/bash/.command
 fi
 
-#load prompt
 
+#load prompt
 if [ -f ~/.dotfiles/bash/.prompt ] && ! shopt -oq posix; then
     . ~/.dotfiles/bash/.prompt
 fi

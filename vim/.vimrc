@@ -18,14 +18,25 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'evanleck/vim-svelte'
-
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'tarekbecker/vim-yaml-formatter'
+Plugin 'digitaltoad/vim-jade'
 call vundle#end()            " required
+
+
+" install plug package manager if not exist
+if empty(glob('~/.vim/autoload/plug.vim'))
+	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+		\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
 call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'mcmartelle/vim-monokai-bold'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -33,10 +44,7 @@ filetype plugin indent on    " required
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
 
 "theme settings
-set bg=dark
-colorscheme gruvbox
-autocmd BufEnter * colorscheme gruvbox
-autocmd BufEnter *.js colorscheme monokai-bold
+colorscheme monokai-bold
 
 let g:indent_guides_enable_on_vim_startup = 1
 
