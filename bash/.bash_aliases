@@ -15,3 +15,6 @@ alias dce='dc exec'
 
 # autojump
 alias j='autojump'
+
+# Tmux
+alias ta='tmux attach-session -t'

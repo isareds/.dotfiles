@@ -19,3 +19,5 @@ alias l='ls -CF'
 source $HOME/.bash_aliases
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source /home/ragnarok/.config/broot/launcher/zsh/br

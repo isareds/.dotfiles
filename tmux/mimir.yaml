@@ -1,0 +1,32 @@
+session_name: mimir
+windows:
+  - window_name: "code"
+    layout: tiled
+    shell_command_before:
+      - cd ~/Documenti/Projects/mimir
+    panes:
+      - nvim
+  - window_name: "container"
+    layout: tiled
+    shell_command_before:
+      - cd ~/Documenti/Projects/mimir
+    panes:
+      - dcu
+  - window_name: "logs"
+    layout: tiled
+    shell_command_before:
+      - cd ~/Documenti/Projects/mimir
+    panes:
+      - dcl client
+  - window_name: "files"
+    layout: tiled
+    shell_command_before:
+      - cd ~/Documenti/Projects/mimir
+    panes:
+      - 
+  - window_name: "git"
+    layout: tiled
+    shell_command_before:
+      - cd ~/Documenti/Projects/mimir
+    panes:
+      - git s

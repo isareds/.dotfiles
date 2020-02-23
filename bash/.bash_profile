@@ -20,8 +20,15 @@ if [ -f ~/.dotfiles/bash/.command ] && ! shopt -oq posix; then
     . ~/.dotfiles/bash/.command
 fi
 
-
 #load prompt
 if [ -f ~/.dotfiles/bash/.prompt ] && ! shopt -oq posix; then
     . ~/.dotfiles/bash/.prompt
 fi
+
+if [ -d "$HOME/.cargo/bin" ] ; then
+  PATH="$PATH:$HOME/.cargo/bin"
+fi
+
+source /home/ragnarok/.config/broot/launcher/bash/br
+
+export SHELL=/bin/bash

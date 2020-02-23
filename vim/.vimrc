@@ -1,32 +1,29 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+if (has("termguicolors"))
+	set termguicolors
+endif
+
+" Some useful settings
+syntax enable
+set number relativenumber
+set nu rnu
 set tabstop=2
-set shiftwidth=2
-set termguicolors
-set nu
-set foldmethod=syntax  
-set foldnestmax=10
-set nofoldenable
-set foldlevel=2
+set shiftwidth=0
+set smartindent
+set expandtab                " tab to spaces
+set tabstop=2                " the width of a tab
+set shiftwidth=2             " the width for indent
+set foldenable               " enable folding
+set foldmethod=indent        " folding by indent
+set foldlevel=99
+set ignorecase               " ignore the case when search texts
+set smartcase                " if searching text contains uppercase case will not be ignored
+set clipboard+=unnamedplus   " Copies using system clipboard
+set mouse=a mousemodel=popup " enable mouse support
+set wildmenu                 " Show the choices when inserting commands
+set lazyredraw
 
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'maksimr/vim-jsbeautify'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'morhetz/gruvbox'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
-Plugin 'evanleck/vim-svelte'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'tarekbecker/vim-yaml-formatter'
-Plugin 'digitaltoad/vim-jade'
-call vundle#end()            " required
-
+" Space in normal mode for code folding
+nnoremap <space> za
 
 " install plug package manager if not exist
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -37,18 +34,32 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'dracula/vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'mcmartelle/vim-monokai-bold'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'ryanoasis/vim-devicons'
+Plug 'maksimr/vim-jsbeautify'
+Plug 'sheerun/vim-polyglot'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'morhetz/gruvbox'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
+Plug 'evanleck/vim-svelte'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tarekbecker/vim-yaml-formatter'
+Plug 'digitaltoad/vim-pug'
 
 call plug#end()
 
 filetype plugin indent on    " required
-autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
 
 "theme settings
-colorscheme monokai-bold
+colorscheme dracula
 
 let g:indent_guides_enable_on_vim_startup = 1
 
@@ -76,15 +87,26 @@ vnoremap l l
 inoremap jk <esc>
 
 "NERD tree mappings
-map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeShowHidden = 1
+let g:NERDTreeMinimalUI = 1
+let g:NERDTreeIgnore = []
+let g:NERDTreeStatusline = ''
+" Automaticaly close nvim if NERDTree is only thing left open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+nnoremap <silent> <C-b> :NERDTreeToggle<CR>
 
-" Node path
-let g:coc_node_path = '/usr/bin/nodejs'
+" FZF config
+nnoremap <C-p> :FZF<CR>
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-s': 'split',
+  \ 'ctrl-v': 'vsplit'
+  \}
 
-
-" Coc.nvim
+" COC.NVIM Configuration
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+let g:coc_global_extensions = ['coc-emmet', 'coc-phpls', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
 
 " if hidden is not set, TextEdit might fail.
 set hidden
