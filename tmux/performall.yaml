@@ -1,5 +1,5 @@
-session_name: oneosix
-start_directory: /home/ragnarok/Documenti/Lavoro/Digital74/oneosix
+session_name: PERFORMALL
+start_directory: /home/ragnarok/Documenti/Lavoro/Digital74/performall
 windows:
   - window_name: "code"
     layout: tiled
@@ -8,7 +8,7 @@ windows:
   - window_name: "container"
     layout: tiled
     panes:
-      - ./start_dev.sh
+      - dcu
   - window_name: "logs"
     layout: tiled
     panes:
@@ -20,4 +20,4 @@ windows:
   - window_name: "git"
     layout: tiled
     panes:
-      - git lg
+      - git s

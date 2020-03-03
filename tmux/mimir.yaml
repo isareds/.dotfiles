@@ -1,9 +1,16 @@
-session_name: mimir
+session_name: MIMIR
+start_directory: /home/ragnarok/Documenti/Projects/mimir 
 windows:
-  - window_name: "code"
+  - window_name: "server"
+    shell_command_before:
+      - cd server
+    layout: tiled
+    panes:
+      - nvim
+  - window_name: "client"
     layout: tiled
     shell_command_before:
-      - cd ~/Documenti/Projects/mimir
+      - cd client
     panes:
       - nvim
   - window_name: "container"
@@ -11,22 +18,12 @@ windows:
     shell_command_before:
       - cd ~/Documenti/Projects/mimir
     panes:
-      - dcu
-  - window_name: "logs"
-    layout: tiled
-    shell_command_before:
-      - cd ~/Documenti/Projects/mimir
-    panes:
-      - dcl client
+      - ./start-dev.sh
   - window_name: "files"
     layout: tiled
-    shell_command_before:
-      - cd ~/Documenti/Projects/mimir
     panes:
-      - 
+      - lg
   - window_name: "git"
     layout: tiled
-    shell_command_before:
-      - cd ~/Documenti/Projects/mimir
     panes:
-      - git s
+      - git lg

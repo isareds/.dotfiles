@@ -1,6 +1,7 @@
 # my alias
 alias bb='cd ..'
 alias ee='exit'
+alias lg='ls -al --group-directories-first'
 
 # Docker alias
 alias dc='docker-compose'
