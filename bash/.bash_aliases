@@ -19,3 +19,4 @@ alias j='autojump'
 
 # Tmux
 alias ta='tmux attach-session -t'
+alias tl='tmuxp load'

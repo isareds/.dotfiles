@@ -39,20 +39,19 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'mcmartelle/vim-monokai-bold'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'ryanoasis/vim-devicons'
-Plug 'maksimr/vim-jsbeautify'
-Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/nerdtree'
 Plug 'evanleck/vim-svelte'
-Plug 'jiangmiao/auto-pairs'
 Plug 'tarekbecker/vim-yaml-formatter'
-Plug 'digitaltoad/vim-pug'
+Plug 'gcmt/taboo.vim'
+Plug 'jremmen/vim-ripgrep'
+Plug 'gregsexton/MatchTag'
+Plug 'chr4/nginx.vim' 
+Plug 'ekalinin/Dockerfile.vim'
 
 call plug#end()
 
@@ -236,3 +235,6 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
+
+" Taboo config
+let g:taboo_tab_format=" [%N]%f%m "

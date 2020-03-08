@@ -1,5 +1,5 @@
 session_name: performast
-start_directory: /home/ragnarok/Documenti/Lavoro/Digital74/performast
+start_directory: /home/ragnarok/Documenti/Lavoro/Digital74/performapp-ast
 windows:
   - window_name: "code"
     layout: tiled
