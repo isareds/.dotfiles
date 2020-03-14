@@ -15,15 +15,14 @@ windows:
       - nvim
   - window_name: "container"
     layout: tiled
-    shell_command_before:
-      - cd ~/Documenti/Projects/mimir
     panes:
       - ./start-dev.sh
   - window_name: "files"
-    layout: tiled
+    layout: "even-horizontal"
     panes:
-      - lg
+      - cd server
+      - cd client
   - window_name: "git"
     layout: tiled
     panes:
-      - git lg
+      - git s
