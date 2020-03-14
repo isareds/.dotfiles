@@ -34,7 +34,6 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'dracula/vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'mcmartelle/vim-monokai-bold'
@@ -52,13 +51,15 @@ Plug 'jremmen/vim-ripgrep'
 Plug 'gregsexton/MatchTag'
 Plug 'chr4/nginx.vim' 
 Plug 'ekalinin/Dockerfile.vim'
+Plug 'leafoftree/vim-vue-plugin'
 
 call plug#end()
 
 filetype plugin indent on    " required
 
 "theme settings
-colorscheme dracula
+colorscheme gruvbox
+set background=dark
 
 let g:indent_guides_enable_on_vim_startup = 1
 
@@ -105,7 +106,7 @@ let g:fzf_action = {
 " COC.NVIM Configuration
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
-let g:coc_global_extensions = ['coc-emmet', 'coc-phpls', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
+let g:coc_global_extensions = ['coc-emmet', 'coc-vetur', 'coc-phpls', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
 
 " if hidden is not set, TextEdit might fail.
 set hidden
@@ -238,3 +239,4 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " Taboo config
 let g:taboo_tab_format=" [%N]%f%m "
+let g:vim_vue_plugin_load_full_syntax = 1
