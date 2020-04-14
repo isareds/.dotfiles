@@ -1,0 +1,38 @@
+session_name: MIMIR
+start_directory: /home/ragnarok/Documenti/Projects/mimir 
+windows:
+  - window_name: "Bruce"
+    shell_command_before:
+      - cd bruce
+    layout: tiled
+    panes:
+      - nvim
+  - window_name: "Selina"
+    layout: tiled
+    shell_command_before:
+      - cd selina
+    panes:
+      - nvim
+  - window_name: "Lucius"
+    layout: tiled
+    shell_command_before:
+      - cd lucius
+    panes:
+      - nvim
+  - window_name: "Docker"
+    layout: tiled
+    panes:
+      - ./start-dev.sh
+  - window_name: "Editor"
+    layout: tiled
+    panes:
+      - ./start-dev.sh
+  - window_name: "Nautilus"
+    layout: "even-horizontal"
+    panes:
+      - cd bruce
+      - cd selina 
+  - window_name: "VCS"
+    layout: tiled
+    panes:
+      - git s

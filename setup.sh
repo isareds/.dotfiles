@@ -12,6 +12,7 @@ select yn in "Yes" "No"; do
 		ln -svf ~/.dotfiles/bash/.bash_profile ~
 		ln -svf ~/.dotfiles/bash/.bash_aliases ~
 		ln -svf ~/.dotfiles/zsh/.zshrc ~
+		ln -svf ~/.dotfiles/.tmuxp ~
 		mkdir -p ~/.config/nvim && ln -svf ~/.dotfiles/vim/init.vim ~/.config/nvim/
 		~/.dotfiles/vim/setup.sh
 		~/.dotfiles/programs/install.sh

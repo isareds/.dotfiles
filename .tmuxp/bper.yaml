@@ -1,0 +1,23 @@
+session_name: bper 
+start_directory: /home/ragnarok/Documenti/Lavoro/Digital74/bper
+windows:
+  - window_name: "code"
+    layout: tiled
+    panes:
+      - nvim
+  - window_name: "container"
+    layout: tiled
+    panes:
+      - 
+  - window_name: "logs"
+    layout: tiled
+    panes:
+      - 
+  - window_name: "files"
+    layout: tiled
+    panes:
+      - 
+  - window_name: "git"
+    layout: tiled
+    panes:
+      - 

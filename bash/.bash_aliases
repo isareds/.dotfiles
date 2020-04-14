@@ -20,3 +20,7 @@ alias j='autojump'
 # Tmux
 alias ta='tmux attach-session -t'
 alias tl='tmuxp load'
+
+alias python='python3'
+alias py='python3'
+
