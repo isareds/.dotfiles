@@ -21,3 +21,5 @@ source $HOME/.bash_aliases
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source /home/ragnarok/.config/broot/launcher/zsh/br
+
+source /home/ragnarok/.config/broot/launcher/bash/br

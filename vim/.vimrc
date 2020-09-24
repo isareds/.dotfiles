@@ -44,7 +44,6 @@ Plug 'morhetz/gruvbox'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
-Plug 'evanleck/vim-svelte'
 Plug 'tarekbecker/vim-yaml-formatter'
 Plug 'gcmt/taboo.vim'
 Plug 'jremmen/vim-ripgrep'
@@ -52,15 +51,16 @@ Plug 'gregsexton/MatchTag'
 Plug 'chr4/nginx.vim' 
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'leafoftree/vim-vue-plugin'
-
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'posva/vim-vue'
 call plug#end()
 
 filetype plugin indent on    " required
 
 "theme settings
-colorscheme gruvbox
-set background=dark
-
+colorscheme onehalfdark
+let g:airline_theme='onehalfdark'
+let g:vim_vue_plugin_load_full_syntax = 1
 let g:indent_guides_enable_on_vim_startup = 1
 
 nnoremap <C-p> :Files<CR>
