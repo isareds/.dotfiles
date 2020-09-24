@@ -24,3 +24,6 @@ alias tl='tmuxp load'
 alias python='python3'
 alias py='python3'
 
+
+# Git Alias
+alias g='git'
