@@ -1,5 +1,5 @@
 session_name: MIMIR
-start_directory: /home/ragnarok/Documenti/Projects/mimir 
+start_directory: /home/ragnarok/Documenti/Lavoro/ReadyInformation/mimir 
 windows:
   - window_name: "Bruce"
     shell_command_before:

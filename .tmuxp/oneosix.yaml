@@ -1,11 +1,16 @@
 session_name: oneosix
 start_directory: /home/ragnarok/Documenti/Lavoro/Digital74/oneosix
 windows:
-  - window_name: "Editor"
+  - window_name: "Server"
     layout: tiled
     panes:
       - nvim
-  - window_name: "Docker"
+  - window_name: "Client"
+    start_directory: resources/js
+    layout: tiled
+    panes:
+      - nvim
+  - window_name: "Container"
     layout: tiled
     panes:
       - ./start_dev.sh

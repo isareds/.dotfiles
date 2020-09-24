@@ -1,0 +1,29 @@
+session_name: SECURITYAPP
+start_directory: /home/ragnarok/Documenti/Lavoro/24Consulting/securityapp
+windows:
+  - window_name: Client
+    panes:
+      - shell_command:
+        - cd client
+        - vim
+  - window_name: Server
+    panes:
+      - shell_command:
+        - cd server
+        - vim
+  - window_name: Logs
+    panes:
+      - shell_command:
+        - tail -f server/storage/logs/laravel.log
+  - window_name: Git
+    panes:
+      - shell_command:
+        - git s
+  - window_name: Tinker
+    panes:
+      - shell_command:
+        - clear
+  - window_name: Docker
+    panes:
+      - shell_command:
+        - ./start-dev.sh

@@ -1,0 +1,29 @@
+session_name: NEWME 
+start_directory: /home/ragnarok/Documenti/Projects/newme
+windows:
+  - window_name: Client
+    panes:
+      - shell_command:
+        - cd client
+        - vim
+  - window_name: Server
+    panes:
+      - shell_command:
+        - cd server
+        - vim
+  - window_name: Logs
+    panes:
+      - shell_command:
+        - dcl
+  - window_name: Git
+    panes:
+      - shell_command:
+        - git s
+  - window_name: Ace
+    panes:
+      - shell_command:
+        - clear
+  - window_name: Docker
+    panes:
+      - shell_command:
+        - ./start-dev.sh
