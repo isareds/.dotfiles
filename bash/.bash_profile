@@ -33,3 +33,6 @@ source /home/ragnarok/.config/broot/launcher/bash/br
 
 export SHELL=/bin/bash
 export EDITOR=nvim
+
+# direnv test
+eval "$(direnv hook bash)"
