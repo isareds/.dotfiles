@@ -15,8 +15,6 @@ sudo snap install blender --classic
 ## VS CODE
 sudo snap install code --classic
 
-## SKYPE
-sudo snap install skype --classic
 
 ## SLACK
 sudo snap install slack --classic
@@ -24,8 +22,6 @@ sudo snap install slack --classic
 ## TELEGRAM
 sudo snap install telegram-desktop
 
-## DATAGRIP
-sudo snap install datagrip --classic
 
 ## DOCKER
 sudo snap install docker
@@ -36,9 +32,6 @@ sudo snap install sublime-text --classic
 ## postman
 sudo snap install postman
 
-## client mail
-sudo snap install mailspring
-
 ## heroku site manager
 sudo snap install heroku --classic
 
@@ -48,6 +41,12 @@ sudo apt remove vim
 
 ## zsh
 sudo apt install zsh
+
+## git hub cli
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+sudo apt-add-repository https://cli.github.com/packages
+sudo apt update
+sudo apt install gh
 
 ## remove unecessary package
 sudo apt autoremove
