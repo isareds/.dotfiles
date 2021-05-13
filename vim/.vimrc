@@ -53,6 +53,8 @@ Plug 'ekalinin/Dockerfile.vim'
 Plug 'leafoftree/vim-vue-plugin'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'posva/vim-vue'
+Plug 'evanleck/vim-svelte', {'branch': 'main'}
+
 call plug#end()
 
 filetype plugin indent on    " required
