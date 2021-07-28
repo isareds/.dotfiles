@@ -1,0 +1,23 @@
+session_name: Treebu - App
+start_directory: /home/ragnarok/Documenti/Lavoro/treebu/salix
+windows:
+  - window_name: "Editor"
+    layout: tiled
+    panes:
+      - nvim
+  - window_name: "Container"
+    layout: tiled
+    panes:
+      - ./start-dev.sh
+  - window_name: "Logs"
+    layout: tiled
+    panes:
+      - 
+  - window_name: "Files"
+    layout: tiled
+    panes:
+      - 
+  - window_name: "Git"
+    layout: tiled
+    panes:
+      - 
