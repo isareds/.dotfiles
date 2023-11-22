@@ -1,0 +1,40 @@
+session_name: fitny2
+windows:
+- layout: 5a07,282x70,0,0,18
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: nvim
+  start_directory: /home/ragnarok/Documenti/Lavoro/ApticLab/fitnessitaly2
+  window_name: Editor
+- layout: 5a08,282x70,0,0,19
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+  start_directory: /home/ragnarok/Documenti/Lavoro/ApticLab/fitnessitaly2
+  window_name: Git
+- layout: d9ff,282x70,0,0,20
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: ./start-dev.sh
+  start_directory: /home/ragnarok/Documenti/Lavoro/ApticLab/fitnessitaly2
+  window_name: Docker
+- layout: da00,282x70,0,0,21
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+  start_directory: /home/ragnarok/Documenti/Lavoro/ApticLab/fitnessitaly2
+  window_name: Estia
+- focus: 'true'
+  layout: da01,282x70,0,0,22
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+  start_directory: /home/ragnarok/Documenti/Lavoro/ApticLab/fitnessitaly2
+  window_name: Files
