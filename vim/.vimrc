@@ -21,6 +21,7 @@ set clipboard+=unnamedplus   " Copies using system clipboard
 set mouse=a mousemodel=popup " enable mouse support
 set wildmenu                 " Show the choices when inserting commands
 set lazyredraw
+set statusline+=%F
 
 " Space in normal mode for code folding
 nnoremap <space> za
@@ -36,16 +37,14 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'mcmartelle/vim-monokai-bold'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tarekbecker/vim-yaml-formatter'
-Plug 'gcmt/taboo.vim'
 Plug 'jremmen/vim-ripgrep'
 Plug 'gregsexton/MatchTag'
 Plug 'chr4/nginx.vim' 
@@ -54,14 +53,23 @@ Plug 'leafoftree/vim-vue-plugin'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'posva/vim-vue'
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
+Plug 'joshdick/onedark.vim'
+Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+Plug 'kyazdani42/nvim-web-devicons' " lua
+
+" Flutter plugins
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'thosakwe/vim-flutter'
+Plug 'natebosch/vim-lsc'
+Plug 'natebosch/vim-lsc-dart'
 
 call plug#end()
 
 filetype plugin indent on    " required
 
 "theme settings
-colorscheme onehalfdark
-let g:airline_theme='onehalfdark'
+colorscheme onedark
+let g:airline_theme='onedark'
 let g:vim_vue_plugin_load_full_syntax = 1
 let g:indent_guides_enable_on_vim_startup = 1
 
@@ -240,5 +248,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 
 " Taboo config
-let g:taboo_tab_format=" [%N]%f%m "
-let g:vim_vue_plugin_load_full_syntax = 1
+"let g:taboo_tab_format=" [%N]%F%m "
+"let g:vim_vue_plugin_load_full_syntax = 1
+
+set showtabline=2
